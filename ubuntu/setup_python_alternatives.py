@@ -2,12 +2,6 @@
 import subprocess
 
 # Run as sudo
-# apt-get install -y python3.6
-# apt-get install -y python3.7
-# update-alternatives --install /usr/bin/python python /usr/bin/python3.6 1
-# update-alternatives --install /usr/bin/python python /usr/bin/python3.7 2
-# update-alternatives --config python
-# update-alternatives  --set python /usr/bin/python3.6
 
 VERSIONS = ["2.7", "3.7"]
 MAJORS = ["", "3"]
@@ -16,8 +10,9 @@ MODULES = ["pip"]
 
 def check(status_code):
     pass
-    # if status_code != 0:
-    #     exit(status_code)
+    if status_code != 0:
+        print("SOMETHING WENT WRONG")
+        exit(status_code)
 
 
 def install_version(version, priority):
