@@ -7,6 +7,8 @@ VERSIONS = [
 ]
 
 DEFAULT_MODULES = [
+    "mbstring",
+    "curl",
     "mysql",
     "cli",
     "xml"
